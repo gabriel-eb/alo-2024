@@ -1,2 +1,1 @@
-// Add JS here
-console.log('loaded!')
+console.log('loaded!');
