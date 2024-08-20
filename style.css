@@ -6,6 +6,7 @@
     --btn-active: #503c4d;
     --font: #EEE;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -50,26 +51,3 @@ h1 {
     font-family: Impact;
     font-weight: 500;
 }
-
-#play-button {
-    margin: 0.5rem 0;
-    cursor: pointer;
-    background: var(--background);
-    border-radius: 50%;
-    transition: all 0.3s ease-in;
-    box-shadow: 4px 4px 8px #0000005c,
-    -10px -10px 10px var(--bg-transparent);
-}
-
-#play-button:active {
-    box-shadow: inset 10px 10px 10px #0000005c,
-    inset -10px -10px 10px var(--bg-transparent);
-}
-/* 
-#play-button:hover path {
-    fill: var(--btn-hover);
-}
-
-#play-button:active path {
-    fill: var(--btn-active);
-} */
