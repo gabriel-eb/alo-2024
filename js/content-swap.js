@@ -1,7 +1,1 @@
-const onContinue = (origin = '', target= '') => {
-    const originNode = document.getElementById(origin);
-    const targetNode = document.getElementById(target);
-    const swapContent = originNode.innerHTML;
-    originNode.innerHTML = targetNode.innerHTML;
-    targetNode.innerHTML = swapContent;
-}
+const onContinue=(a="",b="")=>{const c=document.getElementById(a),d=document.getElementById(b),e=c.innerHTML;c.innerHTML=d.innerHTML,d.innerHTML=e};
