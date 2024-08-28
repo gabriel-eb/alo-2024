@@ -15,14 +15,18 @@
 }
 
 body {
+    height: 100vh;
+    color: var(--font);
+    background-color: var(--background);
+}
+
+#intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
-    height: 100vh;
-    color: var(--font);
-    background-color: var(--background);
+    height: inherit;
 }
 
 button {
