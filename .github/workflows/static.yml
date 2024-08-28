@@ -32,7 +32,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Auto Minify
-        uses: nizarmah/auto-minify@v2.1
+        uses: nizarmah/auto-minify@v3
+        with:
+          overwrite: true
       - name: Auto committing minified files
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
