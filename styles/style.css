@@ -1,0 +1,57 @@
+:root {
+    --background: #272727;
+    --bg-transparent: #27272799;
+    --btn: #d59cce;
+    --btn-hover: #987193;
+    --btn-active: #503c4d;
+    --font: #EEE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    color: var(--font);
+    background-color: var(--background);
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: inherit;
+}
+
+button {
+    margin: 0.5rem 0;
+    background-color: var(--btn);
+    border: none;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    list-style: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+button:hover {
+    background-color: var(--btn-hover);
+}
+
+button:active {
+    background-color: var(--btn-active);
+}
+
+h1 {
+    font-family: Impact;
+    font-weight: 500;
+}
