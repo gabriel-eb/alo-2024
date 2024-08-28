@@ -11,16 +11,15 @@
         💖
       </text>
     </svg>" />
-  <link href="./style.css" rel="stylesheet" />
-  <link href="./index.css" rel="stylesheet" />
+  <link href="./styles/style.css" rel="stylesheet" />
+  <link href="./styles/audio-player.css" rel="stylesheet" />
 </head>
 
 <body>
   <!-- First screen -->
-  <div id="intro">
+  <div id="content">
     <h1>¡Hola bb!</h1>
     <p>Antes de empezar, checa el volumen de los audios</p>
-    <audio id="sample-audio" src="./audios/intro_vol.mp3" loop preload></audio>
     <div roll="button" onclick="customPlay()" id="audio-btn">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#d59cce" height="100px"
         width="100px" version="1.1" id="Layer_1" viewBox="0 0 64 64" enable-background="new 0 0 64 64"
@@ -41,7 +40,7 @@
       </svg>
     </div>
     <p>Cuando escuches el audio bien, continua...</p>
-    <button onclick="stopPlay();onContinue()">Continuar</button>
+    <button onclick="stopPlay();onContinue('content', 'felicitaciones')">Continuar</button>
   </div>
   
   <!-- Second screen -->
@@ -49,7 +48,7 @@
     <h1>
       Felicidades!
     </h1>
-    <button onclick="onContinue()">Regresar</button>
+    <button onclick="onContinue('content', 'felicitaciones')">Regresar</button>
   </template>
   
   <!-- Third screen -->
@@ -58,9 +57,10 @@
       Felicidades 2!
     </h1>
   </template>
-
-  <script defer type="text/javascript" src="./play-audio.js"></script>
-  <script defer type="text/javascript" src="./felicidades.js"></script>
+  
+  <audio id="sample-audio" src="./audios/intro_vol.mp3" loop preload="metadata"></audio>
+  <script defer type="text/javascript" src="./js/audio-player.js"></script>
+  <script defer type="text/javascript" src="./js/content-swap.js"></script>
 </body>
 
 </html>
